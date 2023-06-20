@@ -3,15 +3,15 @@ import cv2
 import numpy as np
 from glob import glob
 
-input_dir = 'C:\\Users\\LEE CHANG YOUNG\\Documents\\GitHub\\python_filter_map_test\\normalmap_sample_img\\ng'
-output_dir = 'C:\\Users\\LEE CHANG YOUNG\\Documents\\GitHub\\python_filter_map_test\\bandpass_normal_result_ng'
+input_dir = 'C:\\Users\\LEE CHANG YOUNG\\Documents\\GitHub\\python_filter_map_test\\normalmap_sample_img\\ng_carpet'
+output_dir = 'C:\\Users\\LEE CHANG YOUNG\\Documents\\GitHub\\python_filter_map_test\\bandpass_normal_result_ng_carpet'
 
 # 폴더가 존재하지 않으면 새로 만듭니다.
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
 # glob을 사용하여 모든 jpg 이미지 파일을 불러옵니다.
-img_paths = glob(os.path.join(input_dir, '*.jpg'))
+img_paths = glob(os.path.join(input_dir, '*.png'))
 
 # 각 이미지 파일에 대해 처리합니다.
 for img_path in img_paths:
